@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menderes Atlı Spor Kulübü | İzmir Binicilik Eğitimi, Pony Club & Doğa Serpme Kahvaltı</title>
+    <title>İzmir Binicilik ve Pony Club | Menderes Atlı Spor Kulübü</title>
     <meta name="description" content="İzmir Menderes'te doğanın kalbinde profesyonel binicilik eğitimi, çocuklar için Pony Club, taş fırın serpme köy kahvaltısı ve orman safarisi.">
-    <meta name="keywords" content="menderes atlı spor kulübü, izmir binicilik dersi, izmir pony club, menderes kahvaltı, izmir serpme kahvaltı, izmir at safari, cüneytbey binicilik">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Menderes Atlı Spor Kulübü | Asalet ve Huzur">
     <meta property="og:description" content="İzmir Menderes'te profesyonel binicilik dersleri, çocuk pony turları ve taş fırın serpme köy kahvaltısı.">
     <meta property="og:image" content="assets/images/hero-bg.jpg">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0f3f21">
 
     <!-- Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Precision Sans) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 
     <style>
         :root {
@@ -974,6 +973,20 @@
             .mobile-contact { display: block; }
             .floating-whatsapp { display: none; }
         }
+
+        .hero-visual { min-height: 510px; background: #173f2e; }
+        .hero-visual > img { position: absolute; inset: 0; object-position: center; }
+        .hero-visual::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(9,30,20,.15), transparent 45%, rgba(9,30,20,.65)); pointer-events: none; }
+        .hero-photo-label { position: absolute; top: 28px; left: 28px; z-index: 1; color: white; font-size: 10px; letter-spacing: .2em; border: 1px solid #ffffff66; padding: 8px 12px; }
+        .hero-badge { z-index: 1; background: #103425cc; border: 1px solid #ffffff30; gap: 14px; }
+        .footer-grid { position: relative; padding-bottom: 220px; }
+        .footer-rider { position: absolute; width: 320px; height: 240px; object-fit: contain; bottom: 0; right: 0; }
+        .privacy-note { font-size: 12px; line-height: 1.7; color: var(--text); margin: 0 0 18px; }
+        .privacy-note a { text-decoration: underline; color: var(--forest); }
+        .map-placeholder { min-height: 400px; height: 100%; padding: 48px 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; text-align: center; background: var(--forest-light); }
+        .map-placeholder > i { color: var(--forest); font-size: 32px; }
+        .map-placeholder p { max-width: 380px; font-size: 13px; }
+        @media(max-width: 767px) { .hero-visual { min-height: 380px; } .hero-badge { left: 16px; right: 16px; flex-wrap: wrap; } .footer-rider { right: auto; left: 0; width: 270px; } }
     </style>
 </head>
 <body id="top">
@@ -1058,11 +1071,11 @@
                         <span>İzmir Menderes • Cüneytbey Köyü</span>
                     </div>
                     <h1>
-                        Zeytin ağaçları arasında <br>
-                        <em>doğayla bütünleşin.</em>
+                        İzmir’de binicilik, <br>
+                        <em>doğanın içinde bir mola.</em>
                     </h1>
                     <p class="hero-lead">
-                        Şehir temposundan 20 dakika uzakta; lisanslı antrenörlerle profesyonel binicilik dersleri, çocuklara özel uysal Pony Club ve taş fırından sıcak pişilerle zengin Ege serpme köy kahvaltısı.
+                        İzmir Menderes’te, zeytin ağaçları arasında; lisanslı antrenörlerle profesyonel binicilik dersleri, çocuklara özel uysal Pony Club ve taş fırından sıcak pişilerle zengin Ege serpme köy kahvaltısı.
                     </p>
                     <div class="hero-actions">
                         <a href="#rezervasyon" class="btn btn-forest">
@@ -1077,14 +1090,15 @@
                 </div>
 
                 <div class="hero-visual">
-                    <img src="assets/images/binicilik-egitimi.jpg" alt="Menderes Atlı Spor Kulübü Manej ve Binicilik">
+                    <img src="assets/images/binicilik-egitimi.jpg" alt="İzmir Menderes’te açık manejde binicilik eğitimi" fetchpriority="high" decoding="async">
+                    <span class="hero-photo-label">MENDERES ATLI SPOR KULÜBÜ</span>
                     <div class="hero-badge">
                         <div>
-                            <strong>Google 4.6 ★</strong>
-                            <div style="font-size: 11px; opacity: 0.85;">202 Doğrulanmış Ziyaretçi Değerlendirmesi</div>
+                            <strong>Atın ritmi, doğanın huzuru.</strong>
+                            <div style="font-size: 11px; opacity: 0.85;">Menderes • Binicilik & Pony Club</div>
                         </div>
-                        <a href="#yorumlar" style="color: #6ee7b7; text-decoration: underline; font-weight: 500;">
-                            Yorumları Oku →
+                        <a href="#hizmetler" style="color: #6ee7b7; text-decoration: underline; font-weight: 500;">
+                            Kulübü Keşfet →
                         </a>
                     </div>
                 </div>
@@ -1139,7 +1153,7 @@
                 <!-- 1. Binicilik -->
                 <div class="area-card" id="binicilik">
                     <div class="area-img-wrap">
-                        <img src="assets/images/binicilik-egitimi.jpg" alt="Profesyonel Binicilik Eğitimi">
+                        <img loading="lazy" decoding="async" src="assets/images/binicilik-egitimi.jpg" alt="Profesyonel Binicilik Eğitimi">
                     </div>
                     <div class="area-body">
                         <div>
@@ -1161,7 +1175,7 @@
                 <!-- 2. Pony Club -->
                 <div class="area-card" id="pony">
                     <div class="area-img-wrap">
-                        <img src="assets/images/pony-club.jpg" alt="Çocuk Pony Club">
+                        <img loading="lazy" decoding="async" src="assets/images/pony-club.jpg" alt="Çocuk Pony Club">
                     </div>
                     <div class="area-body">
                         <div>
@@ -1183,7 +1197,7 @@
                 <!-- 3. Serpme Kahvaltı -->
                 <div class="area-card" id="kahvalti-card">
                     <div class="area-img-wrap">
-                        <img src="assets/images/serpme-kahvalti.jpg" alt="Taş Fırın Serpme Köy Kahvaltısı">
+                        <img loading="lazy" decoding="async" src="assets/images/serpme-kahvalti.jpg" alt="Taş Fırın Serpme Köy Kahvaltısı">
                     </div>
                     <div class="area-body">
                         <div>
@@ -1205,7 +1219,7 @@
                 <!-- 4. Orman Safarisi -->
                 <div class="area-card">
                     <div class="area-img-wrap">
-                        <img src="assets/images/orman-safari.jpg" alt="Menderes Çam Ormanı Safarisi">
+                        <img loading="lazy" decoding="async" src="assets/images/orman-safari.jpg" alt="Menderes Çam Ormanı Safarisi">
                     </div>
                     <div class="area-body">
                         <div>
@@ -1227,7 +1241,7 @@
                 <!-- 5. Dış Çekim -->
                 <div class="area-card">
                     <div class="area-img-wrap">
-                        <img src="assets/images/dis-cekim.jpg" alt="Düğün ve Dış Çekim Platosu">
+                        <img loading="lazy" decoding="async" src="assets/images/dis-cekim.jpg" alt="Düğün ve Dış Çekim Platosu">
                     </div>
                     <div class="area-body">
                         <div>
@@ -1249,7 +1263,7 @@
                 <!-- 6. At Pansiyonu -->
                 <div class="area-card">
                     <div class="area-img-wrap">
-                        <img src="assets/images/at-pansiyonu.jpg" alt="VIP At Pansiyonu ve Bakım">
+                        <img loading="lazy" decoding="async" src="assets/images/at-pansiyonu.jpg" alt="VIP At Pansiyonu ve Bakım">
                     </div>
                     <div class="area-body">
                         <div>
@@ -1286,7 +1300,7 @@
                 <!-- Rüzgar -->
                 <div class="horse-card">
                     <div class="horse-photo">
-                        <img src="assets/images/horse-1.jpg" alt="Rüzgar - İngiliz Biniş Atı">
+                        <img loading="lazy" decoding="async" src="assets/images/horse-1.jpg" alt="Rüzgar - İngiliz Biniş Atı">
                         <span class="horse-breed-badge">İngiliz / Biniş</span>
                     </div>
                     <div class="horse-info">
@@ -1299,7 +1313,7 @@
                 <!-- Pamuk -->
                 <div class="horse-card">
                     <div class="horse-photo">
-                        <img src="assets/images/horse-3.jpg" alt="Pamuk - Shetland Midilli">
+                        <img loading="lazy" decoding="async" src="assets/images/horse-3.jpg" alt="Pamuk - Shetland Midilli">
                         <span class="horse-breed-badge">Shetland Pony</span>
                     </div>
                     <div class="horse-info">
@@ -1312,7 +1326,7 @@
                 <!-- Karamel -->
                 <div class="horse-card">
                     <div class="horse-photo">
-                        <img src="assets/images/horse-2.jpg" alt="Karamel - Haflinger">
+                        <img loading="lazy" decoding="async" src="assets/images/horse-2.jpg" alt="Karamel - Haflinger">
                         <span class="horse-breed-badge">Haflinger</span>
                     </div>
                     <div class="horse-info">
@@ -1325,7 +1339,7 @@
                 <!-- Şimşek -->
                 <div class="horse-card">
                     <div class="horse-photo">
-                        <img src="assets/images/horse-portrait.jpg" alt="Şimşek - Safkan Arap">
+                        <img loading="lazy" decoding="async" src="assets/images/horse-portrait.jpg" alt="Şimşek - Safkan Arap">
                         <span class="horse-breed-badge">Safkan Arap</span>
                     </div>
                     <div class="horse-info">
@@ -1341,8 +1355,8 @@
         <section class="breakfast-band" id="kahvalti">
             <div class="wrap breakfast-grid">
                 <div class="breakfast-gallery">
-                    <img src="assets/images/serpme-kahvalti.jpg" alt="Serpme Köy Kahvaltısı Masası" style="height: 380px;">
-                    <img src="assets/images/breakfast-detail.jpg" alt="Taş Fırın Pişi ve Çay" style="height: 380px;">
+                    <img loading="lazy" decoding="async" src="assets/images/serpme-kahvalti.jpg" alt="Serpme Köy Kahvaltısı Masası" style="height: 380px;">
+                    <img loading="lazy" decoding="async" src="assets/images/breakfast-detail.jpg" alt="Taş Fırın Pişi ve Çay" style="height: 380px;">
                 </div>
 
                 <div>
@@ -1405,8 +1419,8 @@
 
                     <form id="reservationForm" onsubmit="submitWhatsAppBooking(event)">
                         <div class="form-group">
-                            <label class="form-label">Hizmet / Aktivite Seçimi</label>
-                            <select id="formService" class="form-control" required>
+                            <label class="form-label" for="formService">Hizmet / Aktivite Seçimi</label>
+                                <select id="formService" class="form-control" required>
                                 <option value="Serpme Köy Kahvaltısı">Taş Fırın Serpme Köy Kahvaltısı</option>
                                 <option value="Çocuk Pony Club">Çocuk Pony Biniş Turu (3-12 Yaş)</option>
                                 <option value="Kahvaltı + Pony Kombin Paketi">Kahvaltı + Pony Turu Aile Paketi</option>
@@ -1419,11 +1433,11 @@
 
                         <div class="form-grid-2">
                             <div class="form-group">
-                                <label class="form-label">Tercih Edilen Tarih</label>
+                                <label class="form-label" for="formDate">Tercih Edilen Tarih</label>
                                 <input type="date" id="formDate" class="form-control" required>
                             </div>
                             <div class="form-group">
-                                <label class="form-label">Saat Dilimi</label>
+                                <label class="form-label" for="formTime">Saat Dilimi</label>
                                 <select id="formTime" class="form-control">
                                     <option value="09:30 - 11:30 (Kahvaltı)">09:30 - 11:30 (Sabah)</option>
                                     <option value="11:30 - 14:00 (Öğle)">11:30 - 14:00 (Öğle)</option>
@@ -1435,7 +1449,7 @@
 
                         <div class="form-grid-2">
                             <div class="form-group">
-                                <label class="form-label">Kişi / Grup Sayısı</label>
+                                <label class="form-label" for="formGuests">Kişi / Grup Sayısı</label>
                                 <select id="formGuests" class="form-control">
                                     <option value="2 Kişi">2 Kişi (Çift)</option>
                                     <option value="3-4 Kişi (Çekirdek Aile)" selected>3 - 4 Kişi (Aile)</option>
@@ -1444,16 +1458,17 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label class="form-label">Adınız Soyadınız</label>
+                                <label class="form-label" for="formName">Adınız Soyadınız</label>
                                 <input type="text" id="formName" placeholder="Örn: Burak Yılmaz" class="form-control" required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label">Özel İstek / Not (İsteğe Bağlı)</label>
-                            <input type="text" id="formNote" placeholder="Örn: 5 yaşında kızım pony binecek" class="form-control">
+                            <label class="form-label" for="formNote">Özel İstek / Not (İsteğe Bağlı)</label>
+                                <input type="text" id="formNote" placeholder="Örn: Sabah saatlerini tercih ediyoruz" maxlength="300" class="form-control">
                         </div>
 
+                        <p class="privacy-note">Bilgileriniz bu sayfada kaydedilmez; düğmeye bastığınızda adınız ve talep bilgileriniz WhatsApp’a mesaj taslağı olarak aktarılır. Mesajı WhatsApp’ta siz gönderirsiniz. Sağlık bilgisi veya çocuğunuzun kimlik bilgilerini yazmayın. <a href="kvkk.html">Kişisel veri aydınlatmasını okuyun</a>. WhatsApp’ın kendi gizlilik koşulları geçerlidir.</p>
                         <button type="submit" class="btn btn-whatsapp" style="width: 100%; justify-content: center; font-size: 13px; padding: 14px;">
                             <i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i>
                             <span>WhatsApp ile Randevuyu Gönder (0544 571 91 67)</span>
@@ -1467,91 +1482,15 @@
         <section class="section wrap" id="yorumlar">
             <div class="section-heading">
                 <div>
-                    <div class="eyebrow">05 / GERÇEK MÜŞTERİ DENEYİMLERİ</div>
-                    <h2>Google Haritalar'da 4.6 ★ <br>202 doğrulanmış ziyaretçi yorumu.</h2>
+                    <div class="eyebrow">05 / ZİYARETÇİ DENEYİMLERİ</div>
+                    <h2>Ziyaretçilerin gözünden <br>kulübümüz.</h2>
                 </div>
                 <p>
-                    İzmir merkezden ve çevre ilçelerden kulübümüzü ziyaret eden ailelerin ve sporcuların gerçek değerlendirmeleri.
+                    Güncel puan ve değerlendirmeler için kulübümüzün Google Haritalar kaydını ziyaret edin.
                 </p>
             </div>
 
-            <div class="reviews-grid">
-                <!-- 1 -->
-                <div class="review-card">
-                    <div>
-                        <div class="review-header">
-                            <div class="reviewer-info">
-                                <div class="reviewer-avatar">EK</div>
-                                <div>
-                                    <div class="reviewer-name">E*** K***</div>
-                                    <div class="reviewer-meta">Google Haritalar • Yerel Rehber</div>
-                                </div>
-                            </div>
-                            <div class="review-stars">★★★★★</div>
-                        </div>
-                        <p class="review-text">
-                            "Hafta sonu çocuklarla kahvaltıya geldik. Pişileri sıcacık ve hafifti. 5 yaşındaki kızım ilk defa midilliye bindi, eğitmenler o kadar ilgili ve sabırlıydı ki çok mutlu olduk. Doğası muazzam, teşekkürler."
-                        </p>
-                    </div>
-                    <div class="review-tag">
-                        <span>Ziyaret: Kahvaltı & Pony</span>
-                        <span style="color: var(--forest);"><i class="fa-solid fa-check"></i> Doğrulanmış</span>
-                    </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="review-card">
-                    <div>
-                        <div class="review-header">
-                            <div class="reviewer-info">
-                                <div class="reviewer-avatar">BT</div>
-                                <div>
-                                    <div class="reviewer-name">B*** T***</div>
-                                    <div class="reviewer-meta">Google Haritalar • Kursiyer</div>
-                                </div>
-                            </div>
-                            <div class="review-stars">★★★★★</div>
-                        </div>
-                        <p class="review-text">
-                            "10 derslik biniş eğitimini burada tamamladım. Atların bakımı, manej kumu ve antrenörlerin pedagojik yaklaşımı gerçekten çok kaliteli. Gaziemir'den 15 dakikada ulaşılabiliyor olması büyük rahatlık."
-                        </p>
-                    </div>
-                    <div class="review-tag">
-                        <span>Ziyaret: Binicilik Eğitimi</span>
-                        <span style="color: var(--forest);"><i class="fa-solid fa-check"></i> Doğrulanmış</span>
-                    </div>
-                </div>
-
-                <!-- 3 -->
-                <div class="review-card">
-                    <div>
-                        <div class="review-header">
-                            <div class="reviewer-info">
-                                <div class="reviewer-avatar">SA</div>
-                                <div>
-                                    <div class="reviewer-name">S*** A***</div>
-                                    <div class="reviewer-meta">Google Haritalar • Dış Çekim</div>
-                                </div>
-                            </div>
-                            <div class="review-stars">★★★★★</div>
-                        </div>
-                        <p class="review-text">
-                            "Düğün dış çekimimizi burada asil atlarla yaptık. Gün batımında zeytinliklerin arasında çekilen kareler masal gibi çıktı. Kulüp yetkilileri her aşamada çok yardımcı oldu."
-                        </p>
-                    </div>
-                    <div class="review-tag">
-                        <span>Ziyaret: Dış Çekim Platosu</span>
-                        <span style="color: var(--forest);"><i class="fa-solid fa-check"></i> Doğrulanmış</span>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 36px;">
-                <a href="https://maps.google.com/?q=C%C3%BCneytbey,%20%C3%96zt%C3%BCrkler%20Sk.%20no:46/1,%2035470%20Menderes/%C4%B0zmir" target="_blank" class="btn btn-light" style="font-size: 11px;">
-                    <i class="fa-brands fa-google" style="color: #ea4335;"></i>
-                    <span>Google'daki Tüm 202 Yorumu İnceleyin →</span>
-                </a>
-            </div>
+            <a href="https://maps.google.com/?q=Menderes+Atlı+Spor+Kulübü" target="_blank" rel="noopener noreferrer" class="btn btn-light">Google Haritalar’da ziyaretçi yorumlarını inceleyin ↗</a>
         </section>
 
         <!-- Fotoğraf Galerisi (06 / GALERİ) -->
@@ -1569,35 +1508,35 @@
             
             <div class="gallery-grid">
                 <div class="gallery-thumb" onclick="openLightbox('assets/images/binicilik-egitimi.jpg', 'Binicilik Dersi (Açık Manejde Biniş Dersi)')">
-                    <img src="assets/images/binicilik-egitimi.jpg" alt="Binicilik Dersi">
+                    <img loading="lazy" decoding="async" src="assets/images/binicilik-egitimi.jpg" alt="Binicilik Dersi">
                     <div class="gallery-caption">Binicilik Dersi (Açık Manejde Biniş Dersi)</div>
                 </div>
                 <div class="gallery-thumb" onclick="openLightbox('assets/images/pony-club.jpg', 'Pony Club (Çocuk Pony Biniş Turu)')">
-                    <img src="assets/images/pony-club.jpg" alt="Pony Club">
+                    <img loading="lazy" decoding="async" src="assets/images/pony-club.jpg" alt="Pony Club">
                     <div class="gallery-caption">Pony Club (Çocuk Pony Biniş Turu)</div>
                 </div>
                 <div class="gallery-thumb" onclick="openLightbox('assets/images/serpme-kahvalti.jpg', 'Köy Kahvaltısı (Taş Fırın Serpme Kahvaltı)')">
-                    <img src="assets/images/serpme-kahvalti.jpg" alt="Köy Kahvaltısı">
+                    <img loading="lazy" decoding="async" src="assets/images/serpme-kahvalti.jpg" alt="Köy Kahvaltısı">
                     <div class="gallery-caption">Köy Kahvaltısı (Taş Fırın Serpme Kahvaltı)</div>
                 </div>
                 <div class="gallery-thumb" onclick="openLightbox('assets/images/orman-safari.jpg', 'Orman Safarisi (Çam Ormanı Safarisi)')">
-                    <img src="assets/images/orman-safari.jpg" alt="Orman Safarisi">
+                    <img loading="lazy" decoding="async" src="assets/images/orman-safari.jpg" alt="Orman Safarisi">
                     <div class="gallery-caption">Orman Safarisi (Çam Ormanı Safarisi)</div>
                 </div>
                 <div class="gallery-thumb" onclick="openLightbox('assets/images/manej-view.jpg', 'Manej Manzarası (Doğal Taş Mimari & Manej)')">
-                    <img src="assets/images/manej-view.jpg" alt="Manej Manzarası">
+                    <img loading="lazy" decoding="async" src="assets/images/manej-view.jpg" alt="Manej Manzarası">
                     <div class="gallery-caption">Manej Manzarası (Doğal Taş Mimari & Manej)</div>
                 </div>
                 <div class="gallery-thumb" onclick="openLightbox('assets/images/breakfast-detail.jpg', 'Kahvaltı Detay (Taş Fırından Sıcak Pişiler)')">
-                    <img src="assets/images/breakfast-detail.jpg" alt="Kahvaltı Detay">
+                    <img loading="lazy" decoding="async" src="assets/images/breakfast-detail.jpg" alt="Kahvaltı Detay">
                     <div class="gallery-caption">Kahvaltı Detay (Taş Fırından Sıcak Pişiler)</div>
                 </div>
                 <div class="gallery-thumb" onclick="openLightbox('assets/images/dis-cekim.jpg', 'Dış Çekim (Düğün & Özel Gün Çekimleri)')">
-                    <img src="assets/images/dis-cekim.jpg" alt="Dış Çekim">
+                    <img loading="lazy" decoding="async" src="assets/images/dis-cekim.jpg" alt="Dış Çekim">
                     <div class="gallery-caption">Dış Çekim (Düğün & Özel Gün Çekimleri)</div>
                 </div>
                 <div class="gallery-thumb" onclick="openLightbox('assets/images/at-pansiyonu.jpg', 'At Pansiyonu')">
-                    <img src="assets/images/at-pansiyonu.jpg" alt="At Pansiyonu">
+                    <img loading="lazy" decoding="async" src="assets/images/at-pansiyonu.jpg" alt="At Pansiyonu">
                     <div class="gallery-caption">At Pansiyonu</div>
                 </div>
             </div>
@@ -1682,11 +1621,11 @@
                     </div>
 
                     <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
-                        <a href="https://maps.google.com/?q=C%C3%BCneytbey,%20%C3%96zt%C3%BCrkler%20Sk.%20no:46/1,%2035470%20Menderes/%C4%B0zmir" target="_blank" class="btn btn-forest" style="width: 100%;">
+                        <a href="https://maps.google.com/?q=C%C3%BCneytbey,%20%C3%96zt%C3%BCrkler%20Sk.%20no:46/1,%2035470%20Menderes/%C4%B0zmir" target="_blank" rel="noopener noreferrer" class="btn btn-forest" style="width: 100%;">
                             <i class="fa-solid fa-map-location-dot"></i>
                             <span>Google Harita Yol Tarifi</span>
                         </a>
-                        <a href="https://wa.me/905445719167?text=Merhaba,%20konum%20bilgisi%20alabilir%20miyim?" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                        <a href="https://wa.me/905445719167?text=Merhaba,%20konum%20bilgisi%20alabilir%20miyim?" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
                             <i class="fa-brands fa-whatsapp"></i>
                             <span>WhatsApp Konum</span>
                         </a>
@@ -1694,15 +1633,7 @@
                 </div>
 
                 <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--line); min-height: 400px;">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.849091873722!2d27.13525!3d38.2831744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbdf001234567%3A0x1234567890abcdef!2zQ8O8bmV5dGJleSwgw5Z6dMO8cmtsZXIgU2suIG5vOjQ2LzEsIDM1NDcwIE1lbmRlcmVzL8Swem1pcg!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <div class="map-placeholder"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i><h3>Doğanın içinde, Menderes’te.</h3><p>Cüneytbey Mahallesi, Öztürkler Sk. No:46/1</p><p>Yol tarifi Google Haritalar’da açılır. Bu bağlantıyı kullandığınızda Google’ın gizlilik koşulları geçerlidir.</p><a class="btn btn-forest" href="https://maps.google.com/?q=Cüneytbey+Öztürkler+Sk+46/1+Menderes+İzmir" target="_blank" rel="noopener noreferrer">Yol tarifini aç ↗</a></div>
                 </div>
             </div>
         </section>
@@ -1724,6 +1655,7 @@
                     </p>
                 </div>
 
+                <img loading="lazy" decoding="async" class="footer-rider" src="assets/images/footer-binicilik.png" alt="" aria-hidden="true" loading="lazy">
                 <!-- Sütun 2: Keşfedin -->
                 <div>
                     <h4>Hızlı Menü</h4>
@@ -1733,7 +1665,7 @@
                         <li><a href="#kahvalti">Taş Fırın Kahvaltı</a></li>
                         <li><a href="#rezervasyon">WhatsApp Rezervasyon</a></li>
                         <li><a href="#galeri">Fotoğraf Galerisi</a></li>
-                        <li><a href="#yorumlar">Google Yorumları (4.6★)</a></li>
+                        <li><a href="#yorumlar">Ziyaretçi Yorumları</a></li>
                         <li><a href="#ulasim">Konum & Ulaşım</a></li>
                     </ul>
                 </div>
@@ -1760,6 +1692,7 @@
             <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <span>© 2026 Menderes Atlı Spor Kulübü. Tüm Hakları Saklıdır.</span>
+                <a href="kvkk.html">KVKK & Gizlilik</a>
                 <span>Web Tasarım & Mühendislik: <strong>Anıl Mete Yıldız</strong></span>
                 <a href="#top" class="footer-return">
                     <span>Başa dön</span>
@@ -1776,7 +1709,7 @@
                 <i class="fa-solid fa-phone" style="color: var(--forest);"></i>
                 <span>Hemen Ara</span>
             </a>
-            <a href="https://wa.me/905445719167?text=Merhaba,%20Menderes%20Atlı%20Spor%20Kulübü%20hakkında%20bilgi%20ve%20rezervasyon%20istiyorum." target="_blank" class="btn btn-whatsapp" style="min-height: 44px; padding: 8px 12px; font-size: 11px;">
+            <a href="https://wa.me/905445719167?text=Merhaba,%20Menderes%20Atlı%20Spor%20Kulübü%20hakkında%20bilgi%20ve%20rezervasyon%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="min-height: 44px; padding: 8px 12px; font-size: 11px;">
                 <i class="fa-brands fa-whatsapp"></i>
                 <span>WhatsApp</span>
             </a>
@@ -1784,7 +1717,7 @@
     </div>
 
     <!-- Desktop Floating WhatsApp -->
-    <a href="https://wa.me/905445719167?text=Merhaba,%20Menderes%20Atlı%20Spor%20Kulübü%20hakkında%20bilgi%20ve%20rezervasyon%20istiyorum." target="_blank" class="floating-whatsapp" aria-label="WhatsApp İletişim">
+    <a href="https://wa.me/905445719167?text=Merhaba,%20Menderes%20Atlı%20Spor%20Kulübü%20hakkında%20bilgi%20ve%20rezervasyon%20istiyorum." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="WhatsApp İletişim">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
@@ -1835,7 +1768,7 @@
             const text = `Merhaba Menderes Atlı Spor Kulübü Yetkilisi,%0A%0AWeb siteniz üzerinden yeni bir randevu/rezervasyon talebi oluşturdum:%0A%0A👤 *İsim Soyisim:* ${encodeURIComponent(name)}%0A🏇 *Hizmet / Aktivite:* ${encodeURIComponent(service)}%0A📅 *Tarih:* ${encodeURIComponent(date)}%0A⏰ *Saat:* ${encodeURIComponent(time)}%0A👥 *Kişi Sayısı:* ${encodeURIComponent(guests)}%0A📝 *Özel Not:* ${encodeURIComponent(note || 'Belirtilmedi')}%0A%0AMüsaitlik durumunu teyit etmenizi rica ederim. Teşekkürler!`;
 
             const waUrl = `https://wa.me/905445719167?text=${text}`;
-            window.open(waUrl, '_blank');
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
         }
 
         // Lightbox
