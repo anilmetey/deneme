@@ -747,6 +747,7 @@
             color: var(--white);
             font-size: 11px;
             font-weight: 500;
+            line-height: 1.45;
             opacity: 0;
             transition: opacity 0.3s;
         }
@@ -820,6 +821,44 @@
             font-size: 13px;
             color: var(--ink);
             margin-top: 2px;
+        }
+        .location-detail {
+            margin-bottom: 24px;
+        }
+        .location-label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+        }
+        .location-text {
+            font-size: 14px;
+            color: var(--ink);
+            line-height: 1.65;
+        }
+        .location-phone {
+            display: inline-flex;
+            align-items: center;
+            min-height: 44px;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--forest);
+            word-break: break-word;
+        }
+        .location-actions {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .location-map-card {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            min-height: 400px;
         }
         .map-frame {
             border-radius: 8px;
@@ -978,6 +1017,7 @@
             .areas-grid { grid-template-columns: 1fr; }
             .horses-grid { grid-template-columns: 1fr; }
             .gallery-grid { grid-template-columns: 1fr 1fr; }
+            .gallery-caption { opacity: 1; padding: 12px; }
             .reviews-grid { grid-template-columns: 1fr; }
             .form-grid-2 { grid-template-columns: 1fr; }
             .distance-pill-grid { grid-template-columns: 1fr 1fr; }
@@ -987,6 +1027,8 @@
             .contact-desk { padding: 28px 20px; border-radius: 8px; }
             .desk-header { align-items: flex-start; flex-direction: column; gap: 8px; }
             .map-placeholder { min-height: 320px; padding: 36px 20px; }
+            details summary { padding: 18px 16px; gap: 12px; line-height: 1.45; }
+            details p { padding: 0 16px 18px; }
         }
 
         .hero-visual { min-height: 510px; background: #173f2e; }
@@ -1035,6 +1077,13 @@
             .hero-photo-label { top: 18px; left: 18px; max-width: calc(100% - 36px); line-height: 1.4; }
             .hero-badge { bottom: 16px; padding: 14px 16px; }
             .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-thumb { height: 220px; }
+            .distance-pill-grid { grid-template-columns: 1fr; }
+            .distance-pill { display: flex; align-items: center; justify-content: space-between; text-align: left; gap: 12px; }
+            .distance-pill strong { margin-top: 0; white-space: nowrap; }
+            .location-card { padding: 24px 18px; }
+            .location-actions .btn, .map-placeholder .btn { width: 100%; }
+            .location-map-card { min-height: 320px; }
             .footer-rider { width: 138vw; height: 330px; right: -20vw; bottom: 86px; opacity: 0.18; }
             .mobile-contact { padding-left: 12px; padding-right: 12px; }
         }
@@ -1658,20 +1707,20 @@
                             </div>
                         </div>
 
-                        <div style="margin-bottom: 24px;">
-                            <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 4px;">Açık Adres</span>
-                            <p style="font-size: 14px; color: var(--ink); line-height: 1.6;">
+                        <div class="location-detail">
+                            <span class="location-label">Açık Adres</span>
+                            <p class="location-text">
                                 Cüneytbey Mahallesi, Öztürkler Sk. No:46/1,<br>35470 Menderes / İZMİR
                             </p>
                         </div>
 
-                        <div>
-                            <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 4px;">İletişim Hattı</span>
-                            <a href="tel:05445719167" style="font-size: 18px; font-weight: 600; color: var(--forest);">0544 571 91 67</a>
+                        <div class="location-detail">
+                            <span class="location-label">İletişim Hattı</span>
+                            <a href="tel:05445719167" class="location-phone">0544 571 91 67</a>
                         </div>
                     </div>
 
-                    <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
+                    <div class="location-actions">
                         <a href="https://maps.google.com/?q=C%C3%BCneytbey,%20%C3%96zt%C3%BCrkler%20Sk.%20no:46/1,%2035470%20Menderes/%C4%B0zmir" target="_blank" rel="noopener noreferrer" class="btn btn-forest" style="width: 100%;">
                             <i class="fa-solid fa-map-location-dot"></i>
                             <span>Google Harita Yol Tarifi</span>
@@ -1683,8 +1732,14 @@
                     </div>
                 </div>
 
-                <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--line); min-height: 400px;">
-                    <div class="map-placeholder"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i><h3>Doğanın içinde, Menderes’te.</h3><p>Cüneytbey Mahallesi, Öztürkler Sk. No:46/1</p><p>Yol tarifi Google Haritalar’da açılır. Bu bağlantıyı kullandığınızda Google’ın gizlilik koşulları geçerlidir.</p><a class="btn btn-forest" href="https://maps.google.com/?q=Cüneytbey+Öztürkler+Sk+46/1+Menderes+İzmir" target="_blank" rel="noopener noreferrer">Yol tarifini aç ↗</a></div>
+                <div class="location-map-card">
+                    <div class="map-placeholder">
+                        <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                        <h3>Doğanın içinde, Menderes’te.</h3>
+                        <p>Cüneytbey Mahallesi, Öztürkler Sk. No:46/1</p>
+                        <p>Yol tarifi Google Haritalar’da açılır. Bu bağlantıyı kullandığınızda Google’ın gizlilik koşulları geçerlidir.</p>
+                        <a class="btn btn-forest" href="https://maps.google.com/?q=Cüneytbey+Öztürkler+Sk+46/1+Menderes+İzmir" target="_blank" rel="noopener noreferrer">Yol tarifini aç ↗</a>
+                    </div>
                 </div>
             </div>
         </section>
