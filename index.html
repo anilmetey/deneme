@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menderes Atlı Spor Kulübü | İzmir Binicilik Eğitimi, Pony Club & Doğa Serpme Kahvaltı</title>
+    <meta name="description" content="İzmir Menderes'te doğanın kalbinde profesyonel binicilik eğitimi, çocuklar için Pony Club, taş fırın serpme köy kahvaltısı ve orman safarisi.">
+    <meta name="keywords" content="menderes atlı spor kulübü, izmir binicilik dersi, izmir pony club, menderes kahvaltı, izmir serpme kahvaltı, izmir at safari, cüneytbey binicilik">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Menderes Atlı Spor Kulübü | Asalet ve Huzur">
+    <meta property="og:description" content="İzmir Menderes'te profesyonel binicilik dersleri, çocuk pony turları ve taş fırın serpme köy kahvaltısı.">
+    <meta property="og:image" content="assets/images/hero-bg.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Precision Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --paper: #f8fafc;
+            --paper-2: #f1f5f9;
+            --ink: #0f172a;
+            --text: #334155;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --forest: #166534;
+            --forest-dark: #0f3f21;
+            --forest-light: #ecfdf5;
+            --gold: #b48c36;
+            --white: #ffffff;
+            --serif: "Newsreader", "Playfair Display", Georgia, serif;
+            --sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 15px;
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::selection { background: #dcfce7; color: var(--forest-dark); }
+        a { color: inherit; text-decoration: none; }
+        img { display: block; max-width: 100%; }
+
+        .wrap { width: min(1280px, calc(100% - 48px)); margin-inline: auto; }
+
+        /* Top Announcement Strip */
+        .top-strip {
+            background: var(--paper-2);
+            border-bottom: 1px solid var(--line);
+            padding: 9px 0;
+            font-size: 12px;
+            color: var(--muted);
+        }
+        .top-strip-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .status-dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            background: var(--forest);
+            border-radius: 50%;
+            margin-right: 6px;
+            box-shadow: 0 0 0 3px rgba(22, 101, 52, 0.15);
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--line);
+        }
+        .header-inner {
+            height: 84px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-shrink: 0;
+        }
+        .brand-monogram {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--paper-2);
+            border: 1px solid var(--line);
+            display: grid;
+            place-items: center;
+            color: var(--forest);
+            font-size: 20px;
+        }
+        .brand strong {
+            font-family: var(--serif);
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            display: block;
+        }
+        .brand small {
+            font-size: 10px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            display: block;
+            margin-top: 2px;
+        }
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .desktop-nav a {
+            position: relative;
+            padding: 8px 0;
+            color: var(--text);
+            transition: color 0.2s;
+        }
+        .desktop-nav a:after {
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: var(--forest);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.25s;
+        }
+        .desktop-nav a:hover { color: var(--ink); }
+        .desktop-nav a:hover:after { transform: scaleX(1); }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            min-height: 48px;
+            padding: 12px 22px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+        .btn-forest {
+            background: var(--forest);
+            color: var(--white);
+            border-color: var(--forest);
+        }
+        .btn-forest:hover {
+            background: var(--forest-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(22, 101, 52, 0.2);
+        }
+        .btn-light {
+            background: var(--white);
+            color: var(--ink);
+            border-color: var(--line);
+        }
+        .btn-light:hover {
+            background: var(--paper-2);
+            transform: translateY(-2px);
+        }
+        .btn-whatsapp {
+            background: #25d366;
+            color: #ffffff;
+            border-color: #25d366;
+        }
+        .btn-whatsapp:hover {
+            background: #1ebc57;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid var(--line);
+            padding: 8px 14px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: var(--ink);
+        }
+
+        /* Typography & Section Headings */
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--forest);
+            margin-bottom: 16px;
+        }
+        .section { padding: 96px 0; }
+        .section-heading {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            gap: 60px;
+            align-items: end;
+            margin-bottom: 48px;
+        }
+        .section-heading h2 {
+            font-family: var(--serif);
+            font-size: clamp(34px, 3.8vw, 54px);
+            font-weight: 400;
+            line-height: 1.12;
+            letter-spacing: -0.035em;
+        }
+        .section-heading p {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.85;
+        }
+
+        /* Hero Stage */
+        .hero { padding: 36px 0 0; }
+        .hero-stage {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            align-items: stretch;
+            min-height: 600px;
+        }
+        .hero-copy {
+            padding: 60px 54px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero h1 {
+            font-family: var(--serif);
+            font-size: clamp(44px, 5.2vw, 76px);
+            font-weight: 400;
+            line-height: 1.04;
+            letter-spacing: -0.04em;
+            margin-bottom: 24px;
+        }
+        .hero h1 em {
+            font-style: italic;
+            color: var(--forest);
+        }
+        .hero-lead {
+            font-size: 15px;
+            color: var(--text);
+            line-height: 1.9;
+            max-width: 460px;
+            margin-bottom: 36px;
+        }
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .hero-visual {
+            position: relative;
+            overflow: hidden;
+            min-height: 400px;
+            background: var(--paper-2);
+        }
+        .hero-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 35%;
+            filter: contrast(1.05);
+            transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .hero-stage:hover .hero-visual img { transform: scale(1.02); }
+        .hero-badge {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            right: 24px;
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(12px);
+            color: var(--white);
+            padding: 16px 20px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+        }
+        .hero-badge strong { font-family: var(--serif); font-size: 18px; font-weight: 400; color: #f8fafc; }
+
+        /* Metric Strip */
+        .service-strip {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border: 1px solid var(--line);
+            border-top: 0;
+            background: var(--white);
+            border-radius: 0 0 8px 8px;
+        }
+        .strip-item {
+            padding: 24px 20px;
+            border-right: 1px solid var(--line);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .strip-item:last-child { border-right: 0; }
+        .strip-icon {
+            font-size: 22px;
+            color: var(--forest);
+            flex-shrink: 0;
+        }
+        .strip-item strong {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--ink);
+        }
+        .strip-item span {
+            display: block;
+            font-size: 11px;
+            color: var(--muted);
+            margin-top: 1px;
+        }
+
+        /* Hizmetler Grid (Editorial Cards) */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .area-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .area-card:hover {
+            border-color: #cbd5e1;
+            transform: translateY(-2px);
+            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.07);
+        }
+        .area-img-wrap {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        .area-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .area-card:hover .area-img-wrap img { transform: scale(1.02); }
+        .area-body {
+            padding: 28px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .area-num {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--forest);
+            margin-bottom: 8px;
+            display: block;
+        }
+        .area-card h3 {
+            font-family: var(--serif);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.25;
+            margin-bottom: 12px;
+            color: var(--ink);
+        }
+        .area-card p {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.85;
+            margin-bottom: 20px;
+        }
+        .area-features {
+            list-style: none;
+            font-size: 12px;
+            color: var(--text);
+            margin-bottom: 24px;
+        }
+        .area-features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .area-features i { color: var(--forest); font-size: 10px; }
+
+        /* Atlarımız Section */
+        .horses-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .horse-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .horse-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+        }
+        .horse-photo {
+            height: 230px;
+            position: relative;
+            overflow: hidden;
+        }
+        .horse-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .horse-breed-badge {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(15, 23, 42, 0.85);
+            color: var(--white);
+            font-size: 10px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 3px;
+            letter-spacing: 0.05em;
+        }
+        .horse-info { padding: 20px; }
+        .horse-info h4 {
+            font-family: var(--serif);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        .horse-meta {
+            font-size: 11px;
+            color: var(--forest);
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .horse-desc {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.75;
+        }
+
+        /* Kahvaltı Vitrini */
+        .breakfast-band {
+            background: var(--paper-2);
+            border-y: 1px solid var(--line);
+            padding: 96px 0;
+        }
+        .breakfast-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+        .breakfast-gallery {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 16px;
+        }
+        .breakfast-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid var(--line);
+        }
+        .breakfast-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 28px 0;
+        }
+        .breakfast-item {
+            background: var(--white);
+            border: 1px solid var(--line);
+            padding: 12px 16px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--ink);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .breakfast-item i { color: var(--forest); }
+
+        /* Contact & WhatsApp Booking Desk */
+        .contact-band {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 96px 0;
+        }
+        .contact-inner {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 72px;
+            align-items: center;
+        }
+        .contact-statement h2 {
+            font-family: var(--serif);
+            font-size: clamp(38px, 4.2vw, 62px);
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+            margin-bottom: 20px;
+        }
+        .contact-statement h2 em { color: var(--forest); font-style: italic; }
+        .contact-statement p {
+            font-size: 14px;
+            color: var(--text);
+            line-height: 1.9;
+            max-width: 440px;
+            margin-bottom: 32px;
+        }
+
+        
+        .contact-desk {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(22, 101, 52, 0.15);
+            border-radius: 12px;
+            padding: 42px;
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12), 0 8px 24px rgba(22, 101, 52, 0.05);
+            position: relative;
+        }
+        .contact-desk::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--forest) 0%, #34d399 100%);
+            border-radius: 12px 12px 0 0;
+        }
+        .desk-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--line);
+        }
+        .desk-header strong {
+            font-family: var(--serif);
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--ink);
+            text-transform: none;
+            letter-spacing: normal;
+        }
+        
+        .form-group { margin-bottom: 18px; }
+        .form-label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: var(--sans);
+            color: var(--ink);
+            background: #f8fafc;
+            outline: none;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .form-control:focus { 
+            border-color: var(--forest); 
+            background: var(--white);
+            box-shadow: 0 0 0 4px rgba(22, 101, 52, 0.1);
+        }
+        .form-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        /* Review Grid (Google 4.6★ / 202 Reviews) */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .review-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .reviewer-info { display: flex; align-items: center; gap: 12px; }
+        .reviewer-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--paper-2);
+            color: var(--ink);
+            font-size: 12px;
+            font-weight: 600;
+            display: grid;
+            place-items: center;
+        }
+        .reviewer-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+        .reviewer-meta { font-size: 10px; color: var(--muted); }
+        .review-stars { color: #f59e0b; font-size: 11px; letter-spacing: 2px; }
+        .review-text { font-size: 13px; color: var(--text); line-height: 1.85; font-style: italic; }
+        .review-tag {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid var(--line);
+            font-size: 11px;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* FAQ (Native Details/Summary like Metehan Bey) */
+        .faq-wrap { max-width: 820px; margin: 0 auto; }
+        details {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        summary {
+            list-style: none;
+            padding: 20px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary:after {
+            content: "+";
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--muted);
+            transition: transform 0.2s;
+        }
+        details[open] summary:after {
+            content: "−";
+            color: var(--forest);
+        }
+        details p {
+            padding: 0 24px 20px;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.85;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+        .gallery-thumb {
+            height: 240px;
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            border: 1px solid var(--line);
+        }
+        .gallery-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .gallery-thumb:hover img { transform: scale(1.02); }
+        .gallery-caption {
+            position: absolute;
+            inset: auto 0 0 0;
+            padding: 16px;
+            background: linear-gradient(transparent, rgba(15, 23, 42, 0.85));
+            color: var(--white);
+            font-size: 11px;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .gallery-thumb:hover .gallery-caption { opacity: 1; }
+
+        /* Lightbox */
+        #lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            background: rgba(9, 14, 23, 0.95);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        #lightbox.active { display: flex; }
+        #lightbox img {
+            max-width: 90vw;
+            max-height: 85vh;
+            border-radius: 6px;
+            object-contain: contain;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 24px;
+            right: 28px;
+            color: #ffffff;
+            font-size: 32px;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+        }
+
+        /* Location Section */
+        .location-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 36px;
+            align-items: stretch;
+        }
+        .location-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .distance-pill-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .distance-pill {
+            background: var(--paper-2);
+            border: 1px solid var(--line);
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .distance-pill small {
+            display: block;
+            font-size: 10px;
+            color: var(--muted);
+        }
+        .distance-pill strong {
+            display: block;
+            font-size: 13px;
+            color: var(--ink);
+            margin-top: 2px;
+        }
+        .map-frame {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            height: 100%;
+            min-height: 380px;
+        }
+
+        /* Refined Editorial Footer (100% Solid Obsidian - Pure Contrast) */
+        .footer {
+            background: linear-gradient(rgba(9, 14, 23, 0.94), rgba(9, 14, 23, 0.98)), url('assets/images/hero-bg.jpg') center/cover no-repeat !important;
+            color: #f8fafc !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 80px 0 120px 0; /* 120px padding at bottom guarantees zero overlap with mobile bar */
+            position: relative;
+            z-index: 20;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 0.8fr 1fr;
+            gap: 64px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .footer-brand strong {
+            font-family: var(--serif);
+            font-size: 26px;
+            color: #ffffff;
+            display: block;
+        }
+        .footer-brand small {
+            font-size: 10px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #94a3b8;
+            display: block;
+            margin-top: 2px;
+        }
+        .footer-desc {
+            font-size: 13px;
+            color: #94a3b8;
+            line-height: 1.85;
+            margin-top: 18px;
+            max-width: 360px;
+        }
+        .footer h4 {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+        .footer-links {
+            list-style: none;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+        .footer-links li { margin-bottom: 10px; }
+        .footer-links a:hover { color: #ffffff; text-decoration: underline; }
+        .footer-contact-item {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-bottom: 14px;
+            line-height: 1.7;
+        }
+        .footer-contact-item strong { color: #ffffff; display: block; margin-bottom: 2px; }
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 28px;
+            font-size: 11px;
+            color: #64748b;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .footer-return {
+            color: #cbd5e1;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .footer-return:hover { color: #ffffff; }
+
+        /* Mobile Contact Bar (Clean White Background - 100% Readable) */
+        .mobile-contact {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 60;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(14px);
+            border-top: 1px solid var(--line);
+            padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+            box-shadow: 0 -4px 20px rgba(15, 23, 42, 0.08);
+        }
+        .mobile-contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Desktop Floating WhatsApp */
+        .floating-whatsapp {
+            display: flex;
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 50;
+            width: 58px;
+            height: 58px;
+            background: #25d366;
+            color: #ffffff;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+            transition: transform 0.25s ease;
+        }
+        .floating-whatsapp:hover { transform: scale(1.08); }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .desktop-nav { display: none; }
+            .menu-toggle { display: block; }
+            .hero-stage { grid-template-columns: 1fr; }
+            .hero-copy { padding: 40px 32px; }
+            .service-strip { grid-template-columns: repeat(2, 1fr); }
+            .areas-grid { grid-template-columns: 1fr 1fr; }
+            .horses-grid { grid-template-columns: 1fr 1fr; }
+            .breakfast-grid { grid-template-columns: 1fr; }
+            .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+            .location-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+        }
+        @media (max-width: 680px) {
+            .wrap { width: calc(100% - 32px); }
+            .section { padding: 64px 0; }
+            .top-strip { display: none; }
+            .header-inner { height: 72px; }
+            .hero h1 { font-size: 38px; }
+            .service-strip { grid-template-columns: 1fr; }
+            .areas-grid { grid-template-columns: 1fr; }
+            .horses-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; }
+            .reviews-grid { grid-template-columns: 1fr; }
+            .form-grid-2 { grid-template-columns: 1fr; }
+            .distance-pill-grid { grid-template-columns: 1fr 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            .mobile-contact { display: block; }
+            .floating-whatsapp { display: none; }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <!-- Top Announcement Strip -->
+    <div class="top-strip">
+        <div class="wrap top-strip-inner">
+            <div>
+                <span class="status-dot"></span>
+                <span>İzmir Menderes • Cüneytbey Köyü Doğa Alanı</span>
+                <span style="margin: 0 10px; color: var(--line);">|</span>
+                <span>Salı - Pazar: 09:00 - 20:00 (Pazartesi Bakım Günü)</span>
+            </div>
+            <div>
+                <a href="tel:05445719167" style="color: var(--ink); font-weight: 600;">
+                    <i class="fa-solid fa-phone" style="font-size: 10px; color: var(--forest); margin-right: 4px;"></i> 0544 571 91 67
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header (Clean White / 100% Solid & Readable) -->
+    <header class="header">
+        <div class="wrap header-inner">
+            <a href="#" class="brand">
+                <div class="brand-monogram">
+                    <i class="fa-solid fa-horse-head"></i>
+                </div>
+                <div>
+                    <strong>Menderes</strong>
+                    <small>Atlı Spor Kulübü</small>
+                </div>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="#hizmetler">Hizmetlerimiz</a>
+                <a href="#atlarimiz">Atlarımız</a>
+                <a href="#kahvalti">Köy Kahvaltısı</a>
+                <a href="#rezervasyon">Rezervasyon</a>
+                <a href="#galeri">Galeri</a>
+                <a href="#yorumlar">Yorumlar</a>
+                <a href="#ulasim">Ulaşım</a>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <a href="#rezervasyon" class="btn btn-forest" style="display: inline-flex;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 14px;"></i>
+                    <span>Randevu Al</span>
+                </a>
+                <button class="menu-toggle" id="menuToggleBtn" aria-label="Menü">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileDrawer" style="display: none; background: #ffffff; border-top: 1px solid var(--line); padding: 20px 24px;">
+            <div style="display: flex; flex-direction: column; gap: 14px; font-size: 14px; font-weight: 500;">
+                <a href="#hizmetler" class="mobile-drawer-link" style="padding: 6px 0; border-bottom: 1px solid var(--line);">Hizmetlerimiz</a>
+                <a href="#atlarimiz" class="mobile-drawer-link" style="padding: 6px 0; border-bottom: 1px solid var(--line);">Atlarımız</a>
+                <a href="#kahvalti" class="mobile-drawer-link" style="padding: 6px 0; border-bottom: 1px solid var(--line);">Köy Kahvaltısı</a>
+                <a href="#rezervasyon" class="mobile-drawer-link" style="padding: 6px 0; border-bottom: 1px solid var(--line);">WhatsApp Rezervasyon</a>
+                <a href="#galeri" class="mobile-drawer-link" style="padding: 6px 0; border-bottom: 1px solid var(--line);">Fotoğraf Galerisi</a>
+                <a href="#yorumlar" class="mobile-drawer-link" style="padding: 6px 0; border-bottom: 1px solid var(--line);">Google 4.6★ Yorumları</a>
+                <a href="#ulasim" class="mobile-drawer-link" style="padding: 6px 0;">Konum & Yol Tarifi</a>
+                <div style="padding-top: 10px;">
+                    <a href="tel:05445719167" class="btn btn-light" style="width: 100%; justify-content: center; margin-bottom: 8px;">
+                        <i class="fa-solid fa-phone"></i> 0544 571 91 67
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Editorial Luxury Stage) -->
+        <section class="hero wrap">
+            <div class="hero-stage">
+                <div class="hero-copy">
+                    <div class="eyebrow">
+                        <span class="status-dot"></span>
+                        <span>İzmir Menderes • Cüneytbey Köyü</span>
+                    </div>
+                    <h1>
+                        Zeytin ağaçları arasında <br>
+                        <em>doğayla bütünleşin.</em>
+                    </h1>
+                    <p class="hero-lead">
+                        Şehir temposundan 20 dakika uzakta; lisanslı antrenörlerle profesyonel binicilik dersleri, çocuklara özel uysal Pony Club ve taş fırından sıcak pişilerle zengin Ege serpme köy kahvaltısı.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#rezervasyon" class="btn btn-forest">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Rezervasyon Oluştur</span>
+                        </a>
+                        <a href="#hizmetler" class="btn btn-light">
+                            <span>Aktiviteleri İncele</span>
+                            <i class="fa-solid fa-arrow-down" style="font-size: 10px; color: var(--muted);"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <img src="assets/images/binicilik-egitimi.jpg" alt="Menderes Atlı Spor Kulübü Manej ve Binicilik">
+                    <div class="hero-badge">
+                        <div>
+                            <strong>Google 4.6 ★</strong>
+                            <div style="font-size: 11px; opacity: 0.85;">202 Doğrulanmış Ziyaretçi Değerlendirmesi</div>
+                        </div>
+                        <a href="#yorumlar" style="color: #6ee7b7; text-decoration: underline; font-weight: 500;">
+                            Yorumları Oku →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metric Strip below Hero -->
+            <div class="service-strip">
+                <div class="strip-item">
+                    <i class="fa-solid fa-graduation-cap strip-icon"></i>
+                    <div>
+                        <strong>Binicilik Akademisi</strong>
+                        <span>10 Derslik Lisanslı Eğitim</span>
+                    </div>
+                </div>
+                <div class="strip-item">
+                    <i class="fa-solid fa-heart strip-icon"></i>
+                    <div>
+                        <strong>Çocuk Pony Club</strong>
+                        <span>3 - 12 Yaş Uysal Midilliler</span>
+                    </div>
+                </div>
+                <div class="strip-item">
+                    <i class="fa-solid fa-utensils strip-icon"></i>
+                    <div>
+                        <strong>Taş Fırın Kahvaltı</strong>
+                        <span>Sıcak Pişi & Semaver Çayı</span>
+                    </div>
+                </div>
+                <div class="strip-item">
+                    <i class="fa-solid fa-tree strip-icon"></i>
+                    <div>
+                        <strong>Orman Safarisi</strong>
+                        <span>Çam Patikalarında Biniş</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hizmetlerimiz (01 / HİZMETLER) -->
+        <section class="section wrap" id="hizmetler">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">01 / DENEYİMLER</div>
+                    <h2>Her yaşa ve seviyeye uygun <br>ayrıcalıklı kulüp hizmetleri.</h2>
+                </div>
+                <p>
+                    İster binicilik sporunda lisans alma hedefiyle yola çıkın, ister ailenizle zeytin ağaçları gölgesinde huzurlu bir pazar kahvaltısı yapın.
+                </p>
+            </div>
+
+            <div class="areas-grid">
+                <!-- 1. Binicilik -->
+                <div class="area-card" id="binicilik">
+                    <div class="area-img-wrap">
+                        <img src="assets/images/binicilik-egitimi.jpg" alt="Profesyonel Binicilik Eğitimi">
+                    </div>
+                    <div class="area-body">
+                        <div>
+                            <span class="area-num">01 / AKADEMİ</span>
+                            <h3>Binicilik Eğitimi</h3>
+                            <p>Lisanslı antrenörler gözetiminde temel oturuş, denge, lonj, adeta, süratli ve kenter çalışmaları.</p>
+                            <ul class="area-features">
+                                <li><i class="fa-solid fa-check"></i> Birebir 10 derslik paket sistemi</li>
+                                <li><i class="fa-solid fa-check"></i> Kask ve koruma yeleği kulüpten</li>
+                                <li><i class="fa-solid fa-check"></i> Hafta içi & hafta sonu esnek saatler</li>
+                            </ul>
+                        </div>
+                        <a href="#rezervasyon" onclick="setReservationService('Binicilik Eğitimi')" class="btn btn-light" style="width: 100%; justify-content: center;">
+                            Ders Randevusu Al →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Pony Club -->
+                <div class="area-card" id="pony">
+                    <div class="area-img-wrap">
+                        <img src="assets/images/pony-club.jpg" alt="Çocuk Pony Club">
+                    </div>
+                    <div class="area-body">
+                        <div>
+                            <span class="area-num">02 / AİLE & ÇOCUK</span>
+                            <h3>Çocuk Pony Club</h3>
+                            <p>3-12 yaş grubu çocukların fiziksel koordinasyonunu ve hayvan sevgisini geliştiren güvenli midilli turları.</p>
+                            <ul class="area-features">
+                                <li><i class="fa-solid fa-check"></i> Birebir seyis ve eğitmen eşliği</li>
+                                <li><i class="fa-solid fa-check"></i> Uysal ve sevimli Shetland midilliler</li>
+                                <li><i class="fa-solid fa-check"></i> At sevme ve besleme etkinliği</li>
+                            </ul>
+                        </div>
+                        <a href="#rezervasyon" onclick="setReservationService('Çocuk Pony Club')" class="btn btn-light" style="width: 100%; justify-content: center;">
+                            Pony Turu Ayarla →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. Serpme Kahvaltı -->
+                <div class="area-card" id="kahvalti-card">
+                    <div class="area-img-wrap">
+                        <img src="assets/images/serpme-kahvalti.jpg" alt="Taş Fırın Serpme Köy Kahvaltısı">
+                    </div>
+                    <div class="area-body">
+                        <div>
+                            <span class="area-num">03 / GASTRONOMİ</span>
+                            <h3>Taş Fırın Serpme Kahvaltı</h3>
+                            <p>Zeytinliklerin serinliğinde; taş fırında pişen sıcak pişiler, köy yumurtası, Ege peynirleri ve semaver çayı.</p>
+                            <ul class="area-features">
+                                <li><i class="fa-solid fa-check"></i> Sıcak çıtır pişi ve bazlama servisi</li>
+                                <li><i class="fa-solid fa-check"></i> Sınırsız semaverde demlik çay</li>
+                                <li><i class="fa-solid fa-check"></i> Geniş yeşil bahçe & çocuk oyun alanı</li>
+                            </ul>
+                        </div>
+                        <a href="#rezervasyon" onclick="setReservationService('Serpme Köy Kahvaltısı')" class="btn btn-light" style="width: 100%; justify-content: center;">
+                            Kahvaltı Masası Ayır →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. Orman Safarisi -->
+                <div class="area-card">
+                    <div class="area-img-wrap">
+                        <img src="assets/images/orman-safari.jpg" alt="Menderes Çam Ormanı Safarisi">
+                    </div>
+                    <div class="area-body">
+                        <div>
+                            <span class="area-num">04 / DOĞA ROTASI</span>
+                            <h3>Orman & Arazi Safarisi</h3>
+                            <p>Menderes'in çam kokulu patikalarında ve zeytinliklerinde rehber eşliğinde at sırtında 45-60 dakikalık doğa yürüyüşü.</p>
+                            <ul class="area-features">
+                                <li><i class="fa-solid fa-check"></i> Araziye alışkın sakin biniş atları</li>
+                                <li><i class="fa-solid fa-check"></i> Doğa fotoğrafı molaları</li>
+                                <li><i class="fa-solid fa-check"></i> Başlangıç seviyesine uygun güvenli rota</li>
+                            </ul>
+                        </div>
+                        <a href="#rezervasyon" onclick="setReservationService('Orman Safarisi')" class="btn btn-light" style="width: 100%; justify-content: center;">
+                            Safariye Katıl →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. Dış Çekim -->
+                <div class="area-card">
+                    <div class="area-img-wrap">
+                        <img src="assets/images/dis-cekim.jpg" alt="Düğün ve Dış Çekim Platosu">
+                    </div>
+                    <div class="area-body">
+                        <div>
+                            <span class="area-num">05 / PRODÜKSİYON</span>
+                            <h3>Dış Çekim & Özel Günler</h3>
+                            <p>Gelin-damat çekimleri, nişan, mezuniyet ve moda katalog çekimleriniz için asil atlarımız ve doğal manej ortamımız.</p>
+                            <ul class="area-features">
+                                <li><i class="fa-solid fa-check"></i> Çekim süresince seyis desteği</li>
+                                <li><i class="fa-solid fa-check"></i> Gün batımı ve rustik taş dekorlar</li>
+                                <li><i class="fa-solid fa-check"></i> Doğum günü ve özel davet alanı</li>
+                            </ul>
+                        </div>
+                        <a href="#rezervasyon" onclick="setReservationService('Özel Dış Çekim')" class="btn btn-light" style="width: 100%; justify-content: center;">
+                            Tarih Sorgula →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6. At Pansiyonu -->
+                <div class="area-card">
+                    <div class="area-img-wrap">
+                        <img src="assets/images/at-pansiyonu.jpg" alt="VIP At Pansiyonu ve Bakım">
+                    </div>
+                    <div class="area-body">
+                        <div>
+                            <span class="area-num">06 / KONAKLAMA</span>
+                            <h3>At Pansiyonu & Bakım</h3>
+                            <p>Kendi atınız için ferah localar, 7/24 kamera, veteriner kontrolü, kaliteli yonca/yem rasyonu ve günlük padok egzersizi.</p>
+                            <ul class="area-features">
+                                <li><i class="fa-solid fa-check"></i> Hijyenik talaş zemin ve otomatik suluk</li>
+                                <li><i class="fa-solid fa-check"></i> Günlük açık manej çalıştırması</li>
+                                <li><i class="fa-solid fa-check"></i> Düzenli veteriner ve nalbant takibi</li>
+                            </ul>
+                        </div>
+                        <a href="#rezervasyon" onclick="setReservationService('At Pansiyonu')" class="btn btn-light" style="width: 100%; justify-content: center;">
+                            Pansiyon Bilgisi Al →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atlarımızla Tanışın (02 / ASİL SAKİNLERİMİZ) -->
+        <section class="section wrap" id="atlarimiz" style="padding-top: 0;">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">02 / ASİL SAKİNLERİMİZ</div>
+                    <h2>Kulübümüzün karakteri: <br>Atlarımızla tanışın.</h2>
+                </div>
+                <p>
+                    Tesisimizde sevgiyle bakılan, eğitimli, uysal ve her biri kendine özgü bir karaktere sahip asil dostlarımız.
+                </p>
+            </div>
+
+            <div class="horses-grid">
+                <!-- Rüzgar -->
+                <div class="horse-card">
+                    <div class="horse-photo">
+                        <img src="assets/images/horse-1.jpg" alt="Rüzgar - İngiliz Biniş Atı">
+                        <span class="horse-breed-badge">İngiliz / Biniş</span>
+                    </div>
+                    <div class="horse-info">
+                        <h4>Rüzgar</h4>
+                        <span class="horse-meta">7 Yaşında • Açık Manej</span>
+                        <p class="horse-desc">Ritmik adımları ve dengeli duruşuyla başlangıç ve orta seviye binicilerimizin güvenle çalıştığı biniş atımız.</p>
+                    </div>
+                </div>
+
+                <!-- Pamuk -->
+                <div class="horse-card">
+                    <div class="horse-photo">
+                        <img src="assets/images/horse-3.jpg" alt="Pamuk - Shetland Midilli">
+                        <span class="horse-breed-badge">Shetland Pony</span>
+                    </div>
+                    <div class="horse-info">
+                        <h4>Pamuk</h4>
+                        <span class="horse-meta">5 Yaşında • Pony Club</span>
+                        <p class="horse-desc">Çocukların sevgilisi! Sakinliği, sevecen yapısı ve sabrıyla 3-8 yaş arasındaki miniklerin en yakın dostu.</p>
+                    </div>
+                </div>
+
+                <!-- Karamel -->
+                <div class="horse-card">
+                    <div class="horse-photo">
+                        <img src="assets/images/horse-2.jpg" alt="Karamel - Haflinger">
+                        <span class="horse-breed-badge">Haflinger</span>
+                    </div>
+                    <div class="horse-info">
+                        <h4>Karamel</h4>
+                        <span class="horse-meta">8 Yaşında • Orman Safarisi</span>
+                        <p class="horse-desc">Altın sarısı yelesiyle orman turlarımızın güvenilir rehberi. Doğada son derece sakin ve dayanıklı.</p>
+                    </div>
+                </div>
+
+                <!-- Şimşek -->
+                <div class="horse-card">
+                    <div class="horse-photo">
+                        <img src="assets/images/horse-portrait.jpg" alt="Şimşek - Safkan Arap">
+                        <span class="horse-breed-badge">Safkan Arap</span>
+                    </div>
+                    <div class="horse-info">
+                        <h4>Şimşek</h4>
+                        <span class="horse-meta">9 Yaşında • Dış Çekim & Plato</span>
+                        <p class="horse-desc">Zarif kavisli boynu ve asil heybetiyle düğün dış çekimlerinin ve katalog projelerinin en gözde yıldızı.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Taş Fırın Köy Kahvaltısı (03 / GASTRONOMİ) -->
+        <section class="breakfast-band" id="kahvalti">
+            <div class="wrap breakfast-grid">
+                <div class="breakfast-gallery">
+                    <img src="assets/images/serpme-kahvalti.jpg" alt="Serpme Köy Kahvaltısı Masası" style="height: 380px;">
+                    <img src="assets/images/breakfast-detail.jpg" alt="Taş Fırın Pişi ve Çay" style="height: 380px;">
+                </div>
+
+                <div>
+                    <div class="eyebrow">03 / DOĞAL EGE KAHVALTISI</div>
+                    <h2 style="font-family: var(--serif); font-size: clamp(32px, 3.6vw, 48px); font-weight: 400; line-height: 1.15; margin-bottom: 20px;">
+                        Taş fırından masanıza: <br>
+                        <em>Geleneksel serpme lezzetler.</em>
+                    </h2>
+                    <p style="font-size: 14px; color: var(--text); line-height: 1.9;">
+                        Güne zeytin ağaçlarının serinliğinde, Menderes yöresinin taze köy ürünleriyle başlamanın tadını çıkarın. Taş fırında anlık kabaran sıcak pişiler ve semaverde demlenen taze çay eşliğinde doyumsuz bir sofra.
+                    </p>
+
+                    <div class="breakfast-items">
+                        <div class="breakfast-item"><i class="fa-solid fa-check"></i> Sıcak Çıtır Pişiler & Bazlama</div>
+                        <div class="breakfast-item"><i class="fa-solid fa-check"></i> Sahanda Köy Yumurtası</div>
+                        <div class="breakfast-item"><i class="fa-solid fa-check"></i> Bergama Tulumu & Ezine</div>
+                        <div class="breakfast-item"><i class="fa-solid fa-check"></i> Ev Yapımı İncir & Dut Reçeli</div>
+                        <div class="breakfast-item"><i class="fa-solid fa-check"></i> Menderes Sızma Zeytinyağı</div>
+                        <div class="breakfast-item"><i class="fa-solid fa-check"></i> Sınırsız Semaver Çayı</div>
+                    </div>
+
+                    <a href="#rezervasyon" onclick="setReservationService('Serpme Köy Kahvaltısı')" class="btn btn-forest">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Kahvaltı Masası Ayırın</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Rezervasyon Motoru (04 / RANDEVU & REZERVASYON) -->
+        <section class="contact-band" id="rezervasyon">
+            <div class="wrap contact-inner">
+                <div class="contact-statement">
+                    <div class="eyebrow">04 / DOĞRUDAN REZERVASYON</div>
+                    <h2>
+                        Hızlı bir plan. <br>
+                        <em>Huzur dolu bir gün.</em>
+                    </h2>
+                    <p>
+                        Aktivitenizi, tarihinizi ve kişi sayınızı seçin. Bilgileriniz kulüp işletmecimizin <strong>0544 571 91 67</strong> nolu WhatsApp hattına hazır bir randevu taslağı olarak iletilir.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; gap: 14px;">
+                        <a href="tel:05445719167" class="btn btn-light" style="justify-content: flex-start; max-width: 320px;">
+                            <i class="fa-solid fa-phone" style="color: var(--forest);"></i>
+                            <span>Telefonla Hemen Arayın</span>
+                        </a>
+                        <div style="font-size: 11px; color: var(--muted);">
+                            <i class="fa-solid fa-circle-info" style="margin-right: 4px;"></i> Hafta sonları yer durumu için önceden teyit alınması önerilir.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Desk -->
+                <div class="contact-desk">
+                    <div class="desk-header">
+                        <span>ONLINE REZERVASYON FORMU</span>
+                        <span style="color: var(--forest);"><i class="fa-solid fa-bolt"></i> Anında WhatsApp İletimi</span>
+                    </div>
+
+                    <form id="reservationForm" onsubmit="submitWhatsAppBooking(event)">
+                        <div class="form-group">
+                            <label class="form-label">Hizmet / Aktivite Seçimi</label>
+                            <select id="formService" class="form-control" required>
+                                <option value="Serpme Köy Kahvaltısı">Taş Fırın Serpme Köy Kahvaltısı</option>
+                                <option value="Çocuk Pony Club">Çocuk Pony Biniş Turu (3-12 Yaş)</option>
+                                <option value="Kahvaltı + Pony Kombin Paketi">Kahvaltı + Pony Turu Aile Paketi</option>
+                                <option value="Binicilik Eğitimi">10 Derslik Binicilik Eğitimi</option>
+                                <option value="Orman Safarisi">Menderes Orman & Zeytinlik Safarisi</option>
+                                <option value="Özel Dış Çekim">Düğün / Özel Gün Dış Çekimi</option>
+                                <option value="At Pansiyonu">At Pansiyonu & Padok Kiralama</option>
+                            </select>
+                        </div>
+
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label class="form-label">Tercih Edilen Tarih</label>
+                                <input type="date" id="formDate" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Saat Dilimi</label>
+                                <select id="formTime" class="form-control">
+                                    <option value="09:30 - 11:30 (Kahvaltı)">09:30 - 11:30 (Sabah)</option>
+                                    <option value="11:30 - 14:00 (Öğle)">11:30 - 14:00 (Öğle)</option>
+                                    <option value="14:00 - 17:00 (Biniş & Safari)">14:00 - 17:00 (Öğleden Sonra)</option>
+                                    <option value="17:00 - 19:30 (Gün Batımı)">17:00 - 19:30 (Gün Batımı)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label class="form-label">Kişi / Grup Sayısı</label>
+                                <select id="formGuests" class="form-control">
+                                    <option value="2 Kişi">2 Kişi (Çift)</option>
+                                    <option value="3-4 Kişi (Çekirdek Aile)" selected>3 - 4 Kişi (Aile)</option>
+                                    <option value="5-8 Kişi (Geniş Grup)">5 - 8 Kişi (Grup)</option>
+                                    <option value="8+ Kişi (Özel Organizasyon)">8+ Kişi (Grup)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Adınız Soyadınız</label>
+                                <input type="text" id="formName" placeholder="Örn: Burak Yılmaz" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Özel İstek / Not (İsteğe Bağlı)</label>
+                            <input type="text" id="formNote" placeholder="Örn: 5 yaşında kızım pony binecek" class="form-control">
+                        </div>
+
+                        <button type="submit" class="btn btn-whatsapp" style="width: 100%; justify-content: center; font-size: 13px; padding: 14px;">
+                            <i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i>
+                            <span>WhatsApp ile Randevuyu Gönder (0544 571 91 67)</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Yorumları & Ziyaretçi Değerlendirmeleri (05 / SOSYAL KANIT) -->
+        <section class="section wrap" id="yorumlar">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">05 / GERÇEK MÜŞTERİ DENEYİMLERİ</div>
+                    <h2>Google Haritalar'da 4.6 ★ <br>202 doğrulanmış ziyaretçi yorumu.</h2>
+                </div>
+                <p>
+                    İzmir merkezden ve çevre ilçelerden kulübümüzü ziyaret eden ailelerin ve sporcuların gerçek değerlendirmeleri.
+                </p>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- 1 -->
+                <div class="review-card">
+                    <div>
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">EK</div>
+                                <div>
+                                    <div class="reviewer-name">E*** K***</div>
+                                    <div class="reviewer-meta">Google Haritalar • Yerel Rehber</div>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "Hafta sonu çocuklarla kahvaltıya geldik. Pişileri sıcacık ve hafifti. 5 yaşındaki kızım ilk defa midilliye bindi, eğitmenler o kadar ilgili ve sabırlıydı ki çok mutlu olduk. Doğası muazzam, teşekkürler."
+                        </p>
+                    </div>
+                    <div class="review-tag">
+                        <span>Ziyaret: Kahvaltı & Pony</span>
+                        <span style="color: var(--forest);"><i class="fa-solid fa-check"></i> Doğrulanmış</span>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="review-card">
+                    <div>
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">BT</div>
+                                <div>
+                                    <div class="reviewer-name">B*** T***</div>
+                                    <div class="reviewer-meta">Google Haritalar • Kursiyer</div>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "10 derslik biniş eğitimini burada tamamladım. Atların bakımı, manej kumu ve antrenörlerin pedagojik yaklaşımı gerçekten çok kaliteli. Gaziemir'den 15 dakikada ulaşılabiliyor olması büyük rahatlık."
+                        </p>
+                    </div>
+                    <div class="review-tag">
+                        <span>Ziyaret: Binicilik Eğitimi</span>
+                        <span style="color: var(--forest);"><i class="fa-solid fa-check"></i> Doğrulanmış</span>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="review-card">
+                    <div>
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">SA</div>
+                                <div>
+                                    <div class="reviewer-name">S*** A***</div>
+                                    <div class="reviewer-meta">Google Haritalar • Dış Çekim</div>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            "Düğün dış çekimimizi burada asil atlarla yaptık. Gün batımında zeytinliklerin arasında çekilen kareler masal gibi çıktı. Kulüp yetkilileri her aşamada çok yardımcı oldu."
+                        </p>
+                    </div>
+                    <div class="review-tag">
+                        <span>Ziyaret: Dış Çekim Platosu</span>
+                        <span style="color: var(--forest);"><i class="fa-solid fa-check"></i> Doğrulanmış</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 36px;">
+                <a href="https://maps.google.com/?q=C%C3%BCneytbey,%20%C3%96zt%C3%BCrkler%20Sk.%20no:46/1,%2035470%20Menderes/%C4%B0zmir" target="_blank" class="btn btn-light" style="font-size: 11px;">
+                    <i class="fa-brands fa-google" style="color: #ea4335;"></i>
+                    <span>Google'daki Tüm 202 Yorumu İnceleyin →</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Fotoğraf Galerisi (06 / GALERİ) -->
+        <section class="section wrap" id="galeri" style="padding-top: 0;">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">06 / FOTOĞRAF GALERİSİ</div>
+                    <h2>Kulübümüzden anlar.</h2>
+                </div>
+                <p>
+                    Açık manejimiz, sakin midillilerimiz, zeytinlik kahvaltımız ve çam ormanı parkurumuz.
+                </p>
+            </div>
+
+            
+            <div class="gallery-grid">
+                <div class="gallery-thumb" onclick="openLightbox('assets/images/binicilik-egitimi.jpg', 'Binicilik Dersi (Açık Manejde Biniş Dersi)')">
+                    <img src="assets/images/binicilik-egitimi.jpg" alt="Binicilik Dersi">
+                    <div class="gallery-caption">Binicilik Dersi (Açık Manejde Biniş Dersi)</div>
+                </div>
+                <div class="gallery-thumb" onclick="openLightbox('assets/images/pony-club.jpg', 'Pony Club (Çocuk Pony Biniş Turu)')">
+                    <img src="assets/images/pony-club.jpg" alt="Pony Club">
+                    <div class="gallery-caption">Pony Club (Çocuk Pony Biniş Turu)</div>
+                </div>
+                <div class="gallery-thumb" onclick="openLightbox('assets/images/serpme-kahvalti.jpg', 'Köy Kahvaltısı (Taş Fırın Serpme Kahvaltı)')">
+                    <img src="assets/images/serpme-kahvalti.jpg" alt="Köy Kahvaltısı">
+                    <div class="gallery-caption">Köy Kahvaltısı (Taş Fırın Serpme Kahvaltı)</div>
+                </div>
+                <div class="gallery-thumb" onclick="openLightbox('assets/images/orman-safari.jpg', 'Orman Safarisi (Çam Ormanı Safarisi)')">
+                    <img src="assets/images/orman-safari.jpg" alt="Orman Safarisi">
+                    <div class="gallery-caption">Orman Safarisi (Çam Ormanı Safarisi)</div>
+                </div>
+                <div class="gallery-thumb" onclick="openLightbox('assets/images/manej-view.jpg', 'Manej Manzarası (Doğal Taş Mimari & Manej)')">
+                    <img src="assets/images/manej-view.jpg" alt="Manej Manzarası">
+                    <div class="gallery-caption">Manej Manzarası (Doğal Taş Mimari & Manej)</div>
+                </div>
+                <div class="gallery-thumb" onclick="openLightbox('assets/images/breakfast-detail.jpg', 'Kahvaltı Detay (Taş Fırından Sıcak Pişiler)')">
+                    <img src="assets/images/breakfast-detail.jpg" alt="Kahvaltı Detay">
+                    <div class="gallery-caption">Kahvaltı Detay (Taş Fırından Sıcak Pişiler)</div>
+                </div>
+                <div class="gallery-thumb" onclick="openLightbox('assets/images/dis-cekim.jpg', 'Dış Çekim (Düğün & Özel Gün Çekimleri)')">
+                    <img src="assets/images/dis-cekim.jpg" alt="Dış Çekim">
+                    <div class="gallery-caption">Dış Çekim (Düğün & Özel Gün Çekimleri)</div>
+                </div>
+                <div class="gallery-thumb" onclick="openLightbox('assets/images/at-pansiyonu.jpg', 'At Pansiyonu')">
+                    <img src="assets/images/at-pansiyonu.jpg" alt="At Pansiyonu">
+                    <div class="gallery-caption">At Pansiyonu</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SSS (07 / MERAK EDİLENLER) -->
+        <section class="section wrap" id="sss" style="padding-top: 0;">
+            <div class="section-heading" style="margin-bottom: 32px;">
+                <div>
+                    <div class="eyebrow">07 / SIKÇA SORULAN SORULAR</div>
+                    <h2>Merak edilenler.</h2>
+                </div>
+                <p>Ziyaretiniz öncesinde aklınıza gelebilecek tüm pratik soruların yanıtları.</p>
+            </div>
+
+            <div class="faq-wrap">
+                <details>
+                    <summary>İlk defa ata bineceğim, deneyimim yok. Katılabilir miyim?</summary>
+                    <p>Evet, kesinlikle! Atlarımız yeni başlayanlar için son derece uysal ve sakin yetiştirilmiştir. Biniş boyunca antrenörümüz yanınızda yürür ve gerekli tüm güvenlik adımlarını sağlar.</p>
+                </details>
+                <details>
+                    <summary>Binişe gelirken nasıl giyinmeliyiz?</summary>
+                    <p>Özel bir binicilik kıyafetine gerek yoktur. Rahat bir pantolon veya tayt ile düz tabanlı spor ayakkabı tercih etmeniz yeterlidir. Kask ve güvenlik yeleği tesisimizce ücretsiz temin edilir.</p>
+                </details>
+                <details>
+                    <summary>Çocuklar kaç yaşından itibaren Pony binişine başlayabilir?</summary>
+                    <p>3 yaşından itibaren tüm çocuklarımız eğitmen refakatinde uysal Shetland midillilerimizle güvenle biniş yapabilirler.</p>
+                </details>
+                <details>
+                    <summary>Hafta sonu kahvaltı için rezervasyon zorunlu mu?</summary>
+                    <p>Hafta sonları sıcak pişi ve köy ürünleri yoğun talep gördüğünden masa planlaması için rezervasyon önerilir. Sitemizdeki WhatsApp butonu üzerinden saniyeler içinde masanızı ayırtabilirsiniz.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Ulaşım & Konum (08 / ULAŞIM) -->
+        
+        <section class="section wrap" id="ulasim" style="padding-top: 0;">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">08 / ULAŞIM & KONUM</div>
+                    <h2>Şehre çok yakın, <br>doğanın tam içinde.</h2>
+                </div>
+                <p>
+                    Adnan Menderes Havalimanı'na sadece 10 dakika, Gaziemir'e 15 dakika mesafede kolay ulaşılabilir rota.
+                </p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-card">
+                    <div>
+                        <div class="distance-pill-grid">
+                            <div class="distance-pill">
+                                <small>Havalimanı</small>
+                                <strong>10 Dk</strong>
+                            </div>
+                            <div class="distance-pill">
+                                <small>Gaziemir</small>
+                                <strong>15 Dk</strong>
+                            </div>
+                            <div class="distance-pill">
+                                <small>Konak</small>
+                                <strong>25 Dk</strong>
+                            </div>
+                            <div class="distance-pill">
+                                <small>Gümüldür</small>
+                                <strong>20 Dk</strong>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 24px;">
+                            <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 4px;">Açık Adres</span>
+                            <p style="font-size: 14px; color: var(--ink); line-height: 1.6;">
+                                Cüneytbey Mahallesi, Öztürkler Sk. No:46/1,<br>35470 Menderes / İZMİR
+                            </p>
+                        </div>
+
+                        <div>
+                            <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 4px;">İletişim Hattı</span>
+                            <a href="tel:05445719167" style="font-size: 18px; font-weight: 600; color: var(--forest);">0544 571 91 67</a>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
+                        <a href="https://maps.google.com/?q=C%C3%BCneytbey,%20%C3%96zt%C3%BCrkler%20Sk.%20no:46/1,%2035470%20Menderes/%C4%B0zmir" target="_blank" class="btn btn-forest" style="width: 100%;">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>Google Harita Yol Tarifi</span>
+                        </a>
+                        <a href="https://wa.me/905445719167?text=Merhaba,%20konum%20bilgisi%20alabilir%20miyim?" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>WhatsApp Konum</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--line); min-height: 400px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.849091873722!2d27.13525!3d38.2831744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbdf001234567%3A0x1234567890abcdef!2zQ8O8bmV5dGJleSwgw5Z6dMO8cmtsZXIgU2suIG5vOjQ2LzEsIDM1NDcwIE1lbmRlcmVzL8Swem1pcg!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Refined Editorial Footer (100% Solid Obsidian - Zero Contrast Issue) -->
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <!-- Sütun 1: Marka & Açıklama -->
+                <div>
+                    <div class="footer-brand">
+                        <strong>Menderes Atlı Spor Kulübü</strong>
+                        <small>İzmir Binicilik Kulübü & Doğa Tesisi</small>
+                    </div>
+                    <p class="footer-desc">
+                        İzmir Menderes'in bereketli doğasında; lisanslı antrenörlerle binicilik eğitimleri, çocuk pony kulübü, taş fırın serpme köy kahvaltısı ve VIP at pansiyonu hizmetleri.
+                    </p>
+                </div>
+
+                <!-- Sütun 2: Keşfedin -->
+                <div>
+                    <h4>Hızlı Menü</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hizmetler">Kulüp Hizmetlerimiz</a></li>
+                        <li><a href="#atlarimiz">Asil Atlarımız</a></li>
+                        <li><a href="#kahvalti">Taş Fırın Kahvaltı</a></li>
+                        <li><a href="#rezervasyon">WhatsApp Rezervasyon</a></li>
+                        <li><a href="#galeri">Fotoğraf Galerisi</a></li>
+                        <li><a href="#yorumlar">Google Yorumları (4.6★)</a></li>
+                        <li><a href="#ulasim">Konum & Ulaşım</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sütun 3: Doğrudan İletişim -->
+                <div>
+                    <h4>İletişim & Ulaşım</h4>
+                    <div class="footer-contact-item">
+                        <strong>Telefon & WhatsApp</strong>
+                        <a href="tel:05445719167" style="color: #6ee7b7; font-size: 16px; font-weight: 600;">0544 571 91 67</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <strong>Adres</strong>
+                        Cüneytbey Mah. Öztürkler Sk. No:46/1<br>
+                        35470 Menderes / İzmir
+                    </div>
+                    <div class="footer-contact-item">
+                        <strong>Çalışma Saatleri</strong>
+                        Salı - Pazar: 09:00 - 20:00 (Pazartesi bakım günü)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <span>© 2026 Menderes Atlı Spor Kulübü. Tüm Hakları Saklıdır.</span>
+                <span>Web Tasarım & Mühendislik: <strong>Anıl Mete Yıldız</strong></span>
+                <a href="#top" class="footer-return">
+                    <span>Başa dön</span>
+                    <i class="fa-solid fa-arrow-up" style="font-size: 10px;"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Mobile Contact Bar (Clean White Background, High Contrast) -->
+    <div class="mobile-contact">
+        <div class="mobile-contact-grid">
+            <a href="tel:05445719167" class="btn btn-light" style="min-height: 44px; padding: 8px 12px; font-size: 11px;">
+                <i class="fa-solid fa-phone" style="color: var(--forest);"></i>
+                <span>Hemen Ara</span>
+            </a>
+            <a href="https://wa.me/905445719167?text=Merhaba,%20Menderes%20Atlı%20Spor%20Kulübü%20hakkında%20bilgi%20ve%20rezervasyon%20istiyorum." target="_blank" class="btn btn-whatsapp" style="min-height: 44px; padding: 8px 12px; font-size: 11px;">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Desktop Floating WhatsApp -->
+    <a href="https://wa.me/905445719167?text=Merhaba,%20Menderes%20Atlı%20Spor%20Kulübü%20hakkında%20bilgi%20ve%20rezervasyon%20istiyorum." target="_blank" class="floating-whatsapp" aria-label="WhatsApp İletişim">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img id="lightboxImg" src="" alt="Galeri Büyütülmüş Görsel" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Set Default Reservation Date to Tomorrow
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const yyyy = tomorrow.getFullYear();
+        const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+        const dd = String(tomorrow.getDate()).padStart(2, '0');
+        const dateInput = document.getElementById('formDate');
+        if (dateInput) {
+            dateInput.value = `${yyyy}-${mm}-${dd}`;
+            dateInput.min = `${yyyy}-${mm}-${dd}`;
+        }
+
+        // Quick Service Selection from Cards
+        function setReservationService(serviceName) {
+            const select = document.getElementById('formService');
+            if (select) {
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value.includes(serviceName) || serviceName.includes(select.options[i].value)) {
+                        select.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // WhatsApp Reservation Message Builder
+        function submitWhatsAppBooking(e) {
+            e.preventDefault();
+
+            const service = document.getElementById('formService').value;
+            const date = document.getElementById('formDate').value;
+            const time = document.getElementById('formTime').value;
+            const guests = document.getElementById('formGuests').value;
+            const name = document.getElementById('formName').value;
+            const note = document.getElementById('formNote').value;
+
+            const text = `Merhaba Menderes Atlı Spor Kulübü Yetkilisi,%0A%0AWeb siteniz üzerinden yeni bir randevu/rezervasyon talebi oluşturdum:%0A%0A👤 *İsim Soyisim:* ${encodeURIComponent(name)}%0A🏇 *Hizmet / Aktivite:* ${encodeURIComponent(service)}%0A📅 *Tarih:* ${encodeURIComponent(date)}%0A⏰ *Saat:* ${encodeURIComponent(time)}%0A👥 *Kişi Sayısı:* ${encodeURIComponent(guests)}%0A📝 *Özel Not:* ${encodeURIComponent(note || 'Belirtilmedi')}%0A%0AMüsaitlik durumunu teyit etmenizi rica ederim. Teşekkürler!`;
+
+            const waUrl = `https://wa.me/905445719167?text=${text}`;
+            window.open(waUrl, '_blank');
+        }
+
+        // Lightbox
+        function openLightbox(src, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightboxImg');
+            img.src = src;
+            img.alt = caption;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        // Mobile Menu Drawer
+        const menuToggleBtn = document.getElementById('menuToggleBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerLinks = document.querySelectorAll('.mobile-drawer-link');
+
+        if (menuToggleBtn && mobileDrawer) {
+            menuToggleBtn.addEventListener('click', () => {
+                const isOpen = mobileDrawer.style.display === 'block';
+                mobileDrawer.style.display = isOpen ? 'none' : 'block';
+            });
+
+            drawerLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileDrawer.style.display = 'none';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
